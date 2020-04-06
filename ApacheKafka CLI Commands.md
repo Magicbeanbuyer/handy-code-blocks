@@ -22,7 +22,7 @@ ApacheKafka CLI Commands
 
 5.1 list consumer groups
 
-`bin/kafka-consumer-groups --bootstrap-server localhost:9092 --list`
+`bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list`
 
 5.2 reset offsets
 
