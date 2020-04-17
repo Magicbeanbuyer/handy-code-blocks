@@ -86,3 +86,7 @@ spin up another container
 ```
 docker run --rm -ti --volumes-from xenodochial_elbakyan ubuntu bash
 ```
+16. execute a command in a running container
+```
+docker exec -it [container_id] [CMD] 
+```
