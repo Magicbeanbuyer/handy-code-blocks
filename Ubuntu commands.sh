@@ -7,3 +7,7 @@
 2. to unlock locked folders
 
 `sudo chown -R $USER: $HOME`
+
+# SSH Key Generation
+ssh-keygen -t rsa -b 4096 -C "neodigital claim SFPT" -f ./rsa-key
+

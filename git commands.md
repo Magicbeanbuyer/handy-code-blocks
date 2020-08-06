@@ -18,3 +18,12 @@
 
 # push to remote master 
 `git push origin master`
+
+# pull from remote repository
+`git pull --all`
+
+# delete a branch after the remote branch is merged and deleted
+
+1. git remote prune origin --dry-run
+2. git remote prune origin 
+3. git branch -d feature_branch_name
