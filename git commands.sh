@@ -35,4 +35,4 @@ git checkout master
 git branch -D feature_branch_name
 
 # update local repo
-git pull -a 
+git pull --all
