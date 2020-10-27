@@ -1,6 +1,9 @@
 1. to look at docker images
 `docker images`
 
+1.1 to pull an image
+`docer pull image_name:tag`
+
 2. to create a container from an image, ti: terminal interactive
 `docker run -ti ubuntu:latest`
 

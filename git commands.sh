@@ -8,7 +8,7 @@ git checkout -b feature_branch_name
 git commit -am "your commit message"
 
 # Push your branch to the remote repository:
-git push -u origin feature_branch_name
+git push --set-upstream origin feature_branch_name
 
 
 ###########################
