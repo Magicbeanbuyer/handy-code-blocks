@@ -36,3 +36,6 @@ git branch -D feature_branch_name
 
 # update local repo
 git pull --all
+
+# list all tracked files
+git ls-tree -r master --name-only
