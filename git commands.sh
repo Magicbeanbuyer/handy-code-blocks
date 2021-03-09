@@ -36,3 +36,22 @@ git branch -D feature_branch_name
 
 # update local repo
 git pull --all
+
+
+##########################
+## git stash ##
+##########################
+# tutorial https://www.youtube.com/watch?v=KLEDKgMmbBI
+
+git stash save "my messsage"
+git stash list
+git stash apply stash@{0}
+
+# get the first item on the stash list
+git stash pop
+
+# delete a stashed item
+git stash drop stash@{0}
+
+# delete all stashed items
+git stash clear
