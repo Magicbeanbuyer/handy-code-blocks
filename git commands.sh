@@ -55,3 +55,6 @@ git stash drop stash@{0}
 
 # delete all stashed items
 git stash clear
+
+# empty git commit
+git commit --allow-empty -m "'
