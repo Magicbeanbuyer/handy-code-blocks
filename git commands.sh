@@ -57,4 +57,7 @@ git stash drop stash@{0}
 git stash clear
 
 # empty git commit
-git commit --allow-empty -m "'
+git commit --allow-empty -m ""
+
+# clone one branch
+git clone -b go-scientist-graphql git@git-ssh.deepl.dev:deepl/dap/dap.git

@@ -8,6 +8,9 @@
 
 `sudo chown -R $USER: $HOME`
 
-# SSH Key Generation
+3. SSH Key Generation
 ssh-keygen -t rsa -b 4096 -C "neodigital claim SFPT" -f ./rsa-key
+
+4. list file size, -h, --human-readable
+ls -lh
 
