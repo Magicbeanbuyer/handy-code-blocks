@@ -10,6 +10,9 @@ ssh-keygen -t rsa -b 4096 -C "neodigital claim SFPT" -f ./rsa-key
 # move a.txt from dir_one to dir_two, a.txt is removed from dir_one
 mv dir_one/a.txt dir_two
 
+# rename file 
+mv path/to/oldfile path/to/newfile
+
 # copy all files from one dir to another 
 cp -a from/. to/
 

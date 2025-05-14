@@ -36,3 +36,6 @@ git stash clear
 
 # clone one branch
 git clone -b go-scientist-graphql git@git-ssh.deepl.dev:deepl/dap/dap.git
+
+# clone to a specific directory
+git clone git@github.com:ClickHouse/dbt-clickhouse.git oss-dbt-clickhouse

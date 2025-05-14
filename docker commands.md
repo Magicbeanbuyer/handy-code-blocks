@@ -15,13 +15,14 @@
 
 2.3 to do two commands sequentially
 `docker run -ti ubuntu bash -c "sleep 3; echo all done"`
+`docker run -ti clickhouse/clickhouse-server@sha256:15d824df096e7a9fe1b23b24421422b44011b548f811b62c00ae640718b1c756 bash -c "clickhouse --version"`
 
 2.4 to detach a container and leave it running in the backgroup, `-d` detatch
 `docker run -d -ti ubuntu bash`
 
 2.5 `--memory` maximum allowed memory, `--cpu-shares` / `--cpu-quota`
 
-3. to list all running containers
+1. to list all running containers
 `docker ps`
 
 3.1 to check all containers
@@ -58,7 +59,7 @@
 `ctrl + p`
 
 12. attach to a running container
-`docker exec -ti pensive_meitner bash`
+`docker exec -ti clickhouse-ginger1 bash`
 
 13. to look at logs of a container
 `docker logs debugDocker`
@@ -67,7 +68,7 @@
 `docker build -t [image_tag] .`
 
 15. shared volume between host and container
-```
+```sh
 docker run -ti -v /home/xiatong/sharedVolumnHostContainer:/shared-folder ubuntu bash
 ls /shared-folder/
 touch /shared-folder/my-data
