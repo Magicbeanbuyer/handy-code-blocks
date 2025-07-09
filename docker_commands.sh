@@ -54,9 +54,15 @@ docker rm wizardly_wilson
 ######################
 
 # shared volume between host and container
-docker run -ti -v /home/xiatong/sharedVolumnHostContainer:/shared-folder ubuntu bash
+docker run -ti -v ./sharedVolumnHostContainer:/shared-folder ubuntu bash
 ls /shared-folder/
 touch /shared-folder/my-data
+
+docker run --rm -ti \
+    --volume ./scripts:/shared-folder \
+    --name sparkle \
+    --entrypoint bash \
+    spark_minio
 
 # share volume among containers
 docker run --rm -ti \
