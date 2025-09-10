@@ -42,3 +42,9 @@ git clone git@github.com:ClickHouse/dbt-clickhouse.git oss-dbt-clickhouse
 
 # copy a directory from another branch huhu to the current branch
 git checkout huhu -- path/to/directory
+
+# output last 10 git commit logs
+git log -10 --pretty=format:"%h%x09%cd%x09%an%x09%s" --date=format:"%Y-%m-%d %H:%M:%S" | cat
+
+# reset local branch to remote branch
+git fetch && git reset --hard @{u}
