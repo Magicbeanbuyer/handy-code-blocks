@@ -86,3 +86,7 @@ docker run --rm -ti \
     --name three \
     --entrypoint bash \
     ubuntu
+
+# copy files between host and container
+docker cp <container_id>:/path/of/file/in/the/container
+docker cp /path/of/file/outside/the/container <container_id>:/path/of/file/in/the/container
