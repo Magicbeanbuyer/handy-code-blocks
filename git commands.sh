@@ -51,5 +51,5 @@ git fetch && git reset --hard @{u}
 
 # worktree
 BRANCH_NAME=<branch name> \
-&& git worktree add -b $BRANCH_NAME ../worktree/<repo name >/$BRANCH_NAME origin/$BRANCH_NAME \
-&& cd ../worktree/dap-dbt/$BRANCH_NAME
+&& git worktree add -b $BRANCH_NAME ../worktree/<repo name>/$BRANCH_NAME origin/$BRANCH_NAME \
+&& cd ../worktree/<repo name>/$BRANCH_NAME
