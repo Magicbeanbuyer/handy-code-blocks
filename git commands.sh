@@ -50,6 +50,7 @@ git log -10 --pretty=format:"%h%x09%cd%x09%an%x09%s" --date=format:"%Y-%m-%d %H:
 git fetch && git reset --hard @{u}
 
 # worktree
-BRANCH_NAME=<branch name> \
-&& git worktree add -b $BRANCH_NAME ../worktree/<repo name>/$BRANCH_NAME origin/$BRANCH_NAME \
-&& cd ../worktree/<repo name>/$BRANCH_NAME
+BRANCH_NAME=<branch-name> \
+&& WORKTREE_PATH=~/code/worktrees/"$(basename "$PWD")"/"$BRANCH_NAME" \
+&& git worktree add -b "$BRANCH_NAME" "$WORKTREE_PATH" "origin/$BRANCH_NAME" \
+&& cd "$WORKTREE_PATH"
